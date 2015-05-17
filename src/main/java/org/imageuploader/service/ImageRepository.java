@@ -14,6 +14,6 @@ import java.util.List;
  * @author Paul Silaghi
  */
 @RepositoryRestResource
-public interface ImageRepository extends JpaRepository<Image,String> {
+public interface ImageRepository extends PagingAndSortingRepository<Image,String> {
     List<Image> findByAuthor(@Param("author")String author);
 }

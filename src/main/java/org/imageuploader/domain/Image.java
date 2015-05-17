@@ -1,6 +1,8 @@
 package org.imageuploader.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 
 /**
  * @author Paul Silaghi
@@ -12,7 +14,9 @@ public class Image extends BaseEntity{
 
     private String name;
 
-    private Byte[] file;
+    @Lob
+    @Column(length = 100000)
+    private byte[] file;
 
 
 
@@ -24,17 +28,17 @@ public class Image extends BaseEntity{
         this.name = name;
     }
 
-    public Image(String author, String name, Byte[] file) {
+    public Image(String author, String name, byte[] file) {
         this.author = author;
         this.name = name;
         this.file = file;
     }
 
-    public Byte[] getFile() {
+    public byte[] getFile() {
         return file;
     }
 
-    public void setFile(Byte[] file) {
+    public void setFile(byte[] file) {
         this.file = file;
     }
 
