@@ -84,7 +84,7 @@ public class BaseEntity implements Serializable {
     }
 
     protected String createUUID() {
-        return UUID.randomUUID().toString();
+        return UUID.randomUUID().toString().replaceAll("-","");
     }
 
     @Override

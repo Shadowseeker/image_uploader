@@ -16,6 +16,14 @@ public class Image extends BaseEntity{
 
 
 
+    public Image(){
+    }
+
+    public Image(String author, String name) {
+        this.author = author;
+        this.name = name;
+    }
+
     public Image(String author, String name, Byte[] file) {
         this.author = author;
         this.name = name;

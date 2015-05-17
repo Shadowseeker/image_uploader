@@ -19,5 +19,9 @@ public class ImageUploaderRestController {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ImageUploaderRestController.class, args);
+
+
     }
+
+
 }
