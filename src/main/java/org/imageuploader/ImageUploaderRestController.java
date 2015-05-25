@@ -21,9 +21,9 @@ public class ImageUploaderRestController {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ImageUploaderRestController.class, args);
-        RestTemplate restTemplate = new RestTemplate();
+   /*     RestTemplate restTemplate = new RestTemplate();
         Image image = new Image("Paul","test");
-        restTemplate.postForLocation("http://localhost:8080/images",image);
+        restTemplate.postForLocation("http://localhost:8080/images",image);*/
     }
 
 

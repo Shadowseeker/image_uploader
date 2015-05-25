@@ -8,7 +8,7 @@ import java.util.Date;
  * @author Georgia Papp
  */
 
-@Entity
+@Entity(name = "image_user")
 public class User extends BaseEntity{
 
     @Column(unique = true)
