@@ -8,7 +8,7 @@ import javax.persistence.Lob;
  * @author Paul Silaghi
  */
 @Entity
-public class Image extends BaseEntity{
+public class  Image extends BaseEntity{
 
     private String author;
 

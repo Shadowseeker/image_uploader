@@ -2,7 +2,9 @@ package org.imageuploader.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Georgia Papp
@@ -17,6 +19,9 @@ public class User extends BaseEntity{
     private String password;
 
     private String role;
+
+    @ManyToMany
+    private List<User> friends;
 
     private Date laslogin;
 
