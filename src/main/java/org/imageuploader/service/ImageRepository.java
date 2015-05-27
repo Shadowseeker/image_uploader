@@ -18,3 +18,4 @@ import java.util.List;
 public interface ImageRepository extends PagingAndSortingRepository<Image,String> {
     List<Image> findByAuthor(@Param("author")String author);
 }
+
